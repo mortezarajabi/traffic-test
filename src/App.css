@@ -1,38 +1,197 @@
-.App {
-  text-align: center;
-}
+@media only screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .container {
+      width: 88%;
+  }
+  .top-bar {
+    height: 20px;
+  }
+  .nav-bar {
+    height: 40px;
+  }
+  .slick-slider {
+    position: absolute !important;  width: 100%;  z-index: -1;
+    top: 50px;
+  }
+  .contacts ul {
+    margin-top: 65px;
+  }
+  .slider-content > div {
+    width: 100%;
+  }
+  .slider-content-right{
+    clear: left;
+    float: left;
+    position: absolute;
+    top: 940px;
+    left: 0;
+    right: 0;
+  }
+  .slider-content-left h1{
+    font-size: 36px;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .slick-arrow {
+    top: 750px;
+  }
+  .slick-next {
+    left: 18%;
+  }
+  .header-logo {
+    padding: 30px;
+    width: 135px;
+    padding-bottom: 0;
+  }
+  .header-logo .logo {
+    width: 75px;
+    height: 92px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .container {
+    width: 78%;
+  }
+  .top-bar {
+    height: 32px;
+  }
+  .nav-bar {
+    height: 57px;
+  }
+  .header-logo {
+    padding: 2em;
+    width: 195px;
+  }
+
+  .slick-arrow {
+    top: 790px;
+  }
+  .slick-next {
+    left: 14%;
+  }
+
+  .contacts ul {
+    margin-top: 60px;
+  }
+  .slick-slider {
+    position: absolute !important;  width: 100%;  z-index: -1;
+    top: 87px;
+  }
+  .slider-content > div {
+    width: 50%;
+  }
+  .slider-content-right{
+    float: right;
+  }
+  .slider-content-left h1{
+    font-size: 80px;
+  }
+  .slick-next {
+    left: 13%;
+  }
+  .mobile {
+    display: none;
+  }
+}
+
+.body {
+  width: 100%;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+}
+
+.slick img {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-bar {
+  background-color: rgba(186, 217, 130, 0.7);
+  width: 100%;
+}
+
+.nav-bar {
+  width: 100%;
+}
+
+.header-logo {
+  background-color: #333333;
+  z-index: 999;
+  float: left;
+}
+.header-logo .logo {
+  z-index: 9999;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contacts ul {
+  list-style-type: none;
+  float: right;
+}
+.contacts ul li {
+  float: left;
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+}
+.contacts ul li .fas {
+  margin-right: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.slider-content {
+  clear: both;
+  margin-top: 220px;
+}
+
+.slider-content-left {
+  float: left;
+}
+.slider-content-left h1{
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*slick*/
+.slick-arrow {
+  position: absolute;
+}
+
+.slick-prev {
+  left: 11%;
+  z-index: 999;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-family: none;
+  border-radius: 100%;
+  background-color: #BAD982;
+  color: white;
+  width: 20px;
+  height: 20px;
+  padding: 7px;
+}
+
+.button.green {
+  background: #BAD982;
+  border:none;
+  color: black;
+  font-weight: bold;
+  width: 121px;
+  height: 57px;
+}
+
+.button:active:focus {
+  border:none;
 }
